@@ -71,15 +71,108 @@ ul{
     margin: 0 auto;
 }
 
-.content__navbar li {
-    border-right: 3px solid black;
-}
-
 .content__navbar li a{
     color:black;
     font-weight: bold;
     padding: 5px;
     display: block;
+}
+
+.menu{
+    display: block;
+    position: relative;
+    height: 76px;
+    width: 120px;
+    margin: 0;
+    overflow: hidden;
+}
+  
+  
+.menu.inicio{
+    border-top: #ffc000 0.3em solid;
+}
+  
+.menu.quienes{
+    border-top: #b81800 0.3em solid;
+}
+  
+.menu.productos{
+    border-top: #00a53c 0.3em solid;
+}
+  
+.menu.comprar{
+    border-top: #E67E22 0.3em solid;
+}
+
+.menu.contacto{
+    border-top: #9600b4 0.3em solid;
+}
+  
+.menu > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+  
+.menu:after, .menu > span > span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 2em 0 1.5em;
+}
+  
+.menu:after {
+    content: attr(data-title);
+    width: 100%;
+    background: rgba(210, 205, 185, 0.993);
+    color: #000; 
+}
+  
+.menu > span > span {
+    width: 120px;
+    color: #000;
+}
+  
+.menu.inicio > span > span {
+    background: #ffc000;
+}
+  
+.menu.productos > span > span {
+    background: #00a53c;
+}
+  
+.menu.quienes > span > span {
+    background: #b81800;
+}
+  
+.menu.comprar > span > span {
+    background: #E67E22;
+}
+.menu.contacto > span > span {
+      background: #9600b4;
+}
+  
+.menu:hover > span {
+      height: 100%; 
+}
+  
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu li a{
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: sans;
 }
 
 .container{
@@ -206,5 +299,13 @@ ul{
         width: 25px;
         height: 25px;
     }
+    
+    .menu{
+        width: auto;
+    }
 
+    .menu > span > span {
+        width: auto;
+        color: #000;
+    }
 }
