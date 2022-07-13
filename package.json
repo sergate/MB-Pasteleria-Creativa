@@ -1,0 +1,22 @@
+{
+  "name": "mb-pasteleria-creativa",
+  "version": "1.0.0",
+  "description": "Desafio SASS I",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergate/MB-Pasteleria-Creativa.git"
+  },
+  "author": "Jose Silva Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergate/MB-Pasteleria-Creativa/issues"
+  },
+  "homepage": "https://github.com/sergate/MB-Pasteleria-Creativa#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
