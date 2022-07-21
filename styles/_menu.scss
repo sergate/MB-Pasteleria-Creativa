@@ -1,3 +1,16 @@
+.content__navbar{
+    display: flex;
+    justify-content:center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    & li a{
+        color:black;
+        font-weight: bold;
+        padding: 5px;
+        display: block;
+    }
+}
 .menu{
     display: block;
     position: relative;
