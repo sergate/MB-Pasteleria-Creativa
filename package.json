@@ -1,7 +1,6 @@
 {
   "name": "mb-pasteleria-creativa",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "agent-base": "^6.0.2",
@@ -217,7 +216,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "node-sass --include-path sass style.scss .style.css -w"
+    "build": "node-sass --include-path sass ../styles/style.scss ../styles/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -228,5 +227,6 @@
   "bugs": {
     "url": "https://github.com/sergate/MB-Pasteleria-Creativa/issues"
   },
-  "homepage": "https://github.com/sergate/MB-Pasteleria-Creativa#readme"
+  "homepage": "https://github.com/sergate/MB-Pasteleria-Creativa#readme",
+  "description": ""
 }

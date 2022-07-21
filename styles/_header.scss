@@ -1,0 +1,16 @@
+.header{
+    background-color: rgb(142, 217, 192);
+    position:relative;
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content img{
+        max-width: 300px;
+        max-height: 350px;
+        height: auto;
+        width: auto;
+    }
+}

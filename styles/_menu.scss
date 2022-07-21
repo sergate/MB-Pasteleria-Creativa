@@ -1,0 +1,95 @@
+.menu{
+    display: block;
+    position: relative;
+    height: 76px;
+    width: 120px;
+    margin: 0;
+    overflow: hidden;
+
+    &.inicio{
+        border-top: #ffc000 0.3em solid;
+    }
+      
+    &.quienes{
+        border-top: #b81800 0.3em solid;
+    }
+      
+    &.productos{
+        border-top: #00a53c 0.3em solid;
+    }
+      
+    &.comprar{
+        border-top: #E67E22 0.3em solid;
+    }
+    
+    &.contacto{
+        border-top: #9600b4 0.3em solid;
+    }
+      
+    & > span {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+    }
+      
+    &:after, & > span > span {
+        display: block;
+        text-align: center;
+        border-radius: 0em;
+        padding: 2em 0 1.5em;
+    }
+      
+    &:after {
+        content: attr(data-title);
+        width: 100%;
+        background: rgba(210, 205, 185, 0.993);
+        color: #000; 
+    }
+      
+    & > span > span {
+        width: 120px;
+        color: #000;
+    }
+      
+    &.inicio > span > span {
+        background: #ffc000;
+    }
+      
+    &.productos > span > span {
+        background: #00a53c;
+    }
+      
+    &.quienes > span > span {
+        background: #b81800;
+    }
+      
+    &.comprar > span > span {
+        background: #E67E22;
+    }
+    &.contacto > span > span {
+          background: #9600b4;
+    }
+      
+    &:hover > span {
+          height: 100%; 
+    }
+      
+    & ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    & li a{
+        display: inline;
+        float: left;
+        text-decoration: none;
+        font-family: sans;
+    }
+}

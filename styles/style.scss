@@ -1,0 +1,70 @@
+@import './reset';
+@use './header';
+@import './variables';
+@import './grid';
+@import './menu';
+@import './container';
+@import './footer';
+
+@media screen and (max-width:360px) { 
+    .header{
+        height: 180px;
+
+        &__content img{
+            max-width: 180px;
+            max-height: 180px;
+        }
+    }
+
+    .content__navbar li a{
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: auto ;  
+        height: 150px;
+        display: inline-block;
+        margin: auto;
+        padding-top: 20px;
+
+        & .card{
+            width: 170px;   
+            height: 150px;  
+        }
+
+        & .card img{
+            width: 150px;
+            height: 120px;
+        }
+
+        & .card h3{
+            font-weight:700;
+        }
+    } 
+
+    .whatsapp{
+        display: none;
+    }
+
+    .footer h3{
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .redes img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .menu{
+        width: auto;
+
+        & > span > span {
+            width: auto;
+            color: #000;
+        }
+    }
+}
